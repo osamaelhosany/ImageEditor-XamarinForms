@@ -1,5 +1,4 @@
-* linguist-vendored
-*.js linguist-vendored=false
+ *.* linguist-language=C#
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
