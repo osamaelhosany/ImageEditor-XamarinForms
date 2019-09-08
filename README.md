@@ -10,7 +10,7 @@ ImageEditorControl Same as WhatsApp
 This control help you to let users Edit on image from gallery or take a new photo worked with ios & andriod 
 
 ## Screenshots
-![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/untitled.gif)
+
 
 ## My Controls
 - [Dropdown Menu](https://github.com/osamaelhosany/DropdownMenu)
