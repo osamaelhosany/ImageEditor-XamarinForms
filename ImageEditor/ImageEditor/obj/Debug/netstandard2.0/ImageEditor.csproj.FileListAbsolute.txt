@@ -1,0 +1,13 @@
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\bin\Debug\netstandard2.0\ImageEditor.deps.json
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\bin\Debug\netstandard2.0\ImageEditor.dll
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\bin\Debug\netstandard2.0\ImageEditor.pdb
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.csprojAssemblyReference.cache
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\Pages\ImageEditorPage.xaml.g.cs
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\Pages\MainPage.xaml.g.cs
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.AssemblyInfoInputs.cache
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.AssemblyInfo.cs
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.csproj.Fody.CopyLocal.cache
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.dll
+E:\Projects\osama's work\ImageEditor\ImageEditor\ImageEditor\obj\Debug\netstandard2.0\ImageEditor.pdb

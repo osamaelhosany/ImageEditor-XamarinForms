@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ImageEditor.Pages.ImageEditorPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:base="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Pad="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+    xmlns:controls="clr-namespace:ImageEditor.Controls"
+    xmlns:padview="clr-namespace:ImageEditor.Behaviors"
+    x:Name="RootItem">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <Image
+                x:Name="imagebackground"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                BackgroundColor="Red"
+                Source="{Binding SelectedImage}" />
+
+            <controls:EditorControl
+                x:Name="editorcomment"
+                AbsoluteLayout.LayoutBounds="0.3,0.3,0.7,0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent"
+                FontSize="Medium"
+                IsVisible="False"
+                Placeholder="Enter your Comment"
+                PlaceholderColor="{Binding CommentColor}"
+                Text="{Binding CommentText}"
+                TextColor="{Binding CommentColor}"
+                Unfocused="Editorcomment_Unfocused" />
+
+            <padview:PanContainer
+                x:Name="pancontainer"
+                AbsoluteLayout.LayoutBounds="0.3,0.3,0.7,0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                IsVisible="False">
+                <Label
+                    x:Name="labelcomment"
+                    BackgroundColor="Transparent"
+                    FontSize="Medium"
+                    TextColor="{Binding CommentColor}" />
+                <padview:PanContainer.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PanContainer_Tapped" />
+                </padview:PanContainer.GestureRecognizers>
+            </padview:PanContainer>
+
+            <Pad:SignaturePadView
+                x:Name="signaturepad"
+                AbsoluteLayout.LayoutBounds="0,0.1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent"
+                ClearText=""
+                ClearTextColor="Transparent"
+                IsEnabled="False"
+                IsVisible="False"
+                StrokeColor="{Binding StrokeColor}"
+                StrokeWidth="5">
+                <Pad:SignaturePadView.Behaviors>
+                    <padview:ScratchView />
+                </Pad:SignaturePadView.Behaviors>
+            </Pad:SignaturePadView>
+
+            <Button
+                x:Name="savebutton"
+                Margin="20,10"
+                AbsoluteLayout.LayoutBounds="0,1,1,0.1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="LightGray"
+                BorderRadius="8"
+                Command="{Binding SaveImageCommand}"
+                CommandParameter="{Binding Source={x:Reference RootItem}}"
+                FontAttributes="Bold"
+                FontSize="12"
+                Text="Save Image"
+                TextColor="Gray" />
+
+            <Image
+                x:Name="imgcolors"
+                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutFlags="None"
+                BackgroundColor="Transparent"
+                IsVisible="False"
+                Rotation="-90"
+                Source="colors.jpg" />
+
+            <Slider
+                x:Name="commentcolorslider"
+                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutFlags="None"
+                BackgroundColor="Transparent"
+                IsVisible="False"
+                Maximum="9"
+                MaximumTrackColor="Transparent"
+                Minimum="0"
+                MinimumTrackColor="Transparent"
+                Rotation="-90"
+                ThumbImageSource="thumb"
+                Value="{Binding ColorSliderValue}" />
+
+            <Slider
+                x:Name="scratchcolorslider"
+                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutFlags="None"
+                BackgroundColor="Transparent"
+                IsVisible="False"
+                Maximum="9"
+                MaximumTrackColor="Transparent"
+                Minimum="0"
+                MinimumTrackColor="Transparent"
+                Rotation="-90"
+                ThumbImageSource="thumb"
+                Value="{Binding ScratchSliderValue}" />
+
+            <Grid
+                x:Name="gridtoolbar"
+                Padding="10"
+                AbsoluteLayout.LayoutBounds="0,0,1,.06"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image
+                    Grid.Column="0"
+                    HeightRequest="24"
+                    HorizontalOptions="Start"
+                    Source="cross"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ClosePageCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                    x:Name="resetlabel"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalOptions="End"
+                    IsVisible="False"
+                    Text="Reset"
+                    TextColor="Black"
+                    VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ResetAllActions_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label
+                    x:Name="clearlabel"
+                    Grid.Column="2"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    HorizontalOptions="End"
+                    IsVisible="{Binding Source={x:Reference signaturepad}, Path=ClearLabel.IsVisible}"
+                    Text="Clear"
+                    TextColor="#782929"
+                    VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ClearScratch_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Column="3"
+                    HeightRequest="24"
+                    HorizontalOptions="End"
+                    IsVisible="{Binding Source={x:Reference signaturepad}, Path=ClearLabel.IsVisible}"
+                    Source="undo"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="UndoStroke_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    x:Name="redoimg"
+                    Grid.Column="4"
+                    HeightRequest="24"
+                    HorizontalOptions="End"
+                    IsVisible="{Binding Source={x:Reference signaturepad}, Path=ClearLabel.IsVisible}"
+                    Source="redo"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RedoStroke_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Column="5"
+                    HeightRequest="24"
+                    HorizontalOptions="End"
+                    Source="rotate"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RotateImage_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Column="6"
+                    HeightRequest="24"
+                    HorizontalOptions="Center"
+                    Source="ticon"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ShowCommentEditor_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image
+                    Grid.Column="7"
+                    HeightRequest="24"
+                    HorizontalOptions="Start"
+                    Source="pencil"
+                    VerticalOptions="Center"
+                    WidthRequest="24">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ShowScratchView_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
