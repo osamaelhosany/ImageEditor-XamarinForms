@@ -13,7 +13,6 @@ This control help you to let users Edit on image from gallery or take a new phot
 ![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/Screenshot_1.png)
 ![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/Screenshot_3.png)
 ![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/Screenshot_2.png)
-![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/Screenshot_4.png)
 ![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/untitled.gif)
 
 ## My Controls
