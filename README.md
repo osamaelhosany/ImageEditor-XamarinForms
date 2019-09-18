@@ -6,8 +6,14 @@ ImageEditorControl Same as WhatsApp
 - Change (Stroke & Text) colors with slider 
 - Rotate Image 
 - Reset all settings
+
 ## OverView 
 This control help you to let users Edit on image from gallery or take a new photo worked with ios & andriod 
+
+## Built with 
+- [Plugin Media](https://github.com/jamesmontemagno/MediaPlugin)
+- [Plugin Screenshot](https://github.com/wilsonvargas/ScreenshotPlugin)
+- [SignaturePad Control](https://github.com/xamarin/SignaturePad)
 
 ## Screenshots
 ![alt text](https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Screenshots/Screenshot_1.png)
