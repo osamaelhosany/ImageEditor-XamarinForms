@@ -10,3 +10,24 @@ bin/
 obj/
 
 
+*.dll
+*.pdb
+*.props
+*.dll
+*.pdb
+*.s
+*.s
+*.s
+*.s
+*.txt
+*.txt
+*.cache
+*.dll
+*.pdb
+*.dll
+*.pdb
+*.dll
+*.dll
+*.pdb
+*.txt
+*.hash
