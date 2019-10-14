@@ -31,6 +31,6 @@ steps:
 - task: MSBuild@1
   displayName: 'Build solution'
   inputs:
-    solution: https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Src/ImageEditor/ImageEditor.csproj
+    solution: 'https://github.com/osamaelhosany/ImageEditor-XamarinForms/blob/master/Src/ImageEditor/ImageEditor.csproj'
     msbuildArguments: '/t:restore;build /p:PackageOutputPath=$(build.artifactstagingdirectory)'
     clean: true
