@@ -1764,11 +1764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.iOS\\ImageEditor.iOS.csproj",
+      "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.iOS\\ImageEditor.iOS.csproj",
       "projectName": "ImageEditor.iOS",
-      "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.iOS\\ImageEditor.iOS.csproj",
+      "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.iOS\\ImageEditor.iOS.csproj",
       "packagesPath": "C:\\Users\\Osama.elhussiny\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.iOS\\obj\\",
+      "outputPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1783,14 +1783,14 @@
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Osama.elhussiny\\source\\repos\\FreshMvvmPattern\\FreshMvvm": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
-              "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj"
+            "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
+              "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj": {}
+    "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj": {
+    "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj",
+        "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj",
         "projectName": "ImageEditor.Android",
-        "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj",
+        "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.Android\\ImageEditor.Android.csproj",
         "packagesPath": "C:\\Users\\Osama.elhussiny\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor.Android\\obj\\",
+        "outputPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -26,14 +26,14 @@
           "monoandroid81"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Osama.elhussiny\\source\\repos\\FreshMvvmPattern\\FreshMvvm": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid81": {
             "projectReferences": {
-              "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
-                "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj"
+              "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
+                "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
+    "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
+        "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
         "projectName": "ImageEditor",
-        "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
+        "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
         "packagesPath": "C:\\Users\\Osama.elhussiny\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\obj\\",
+        "outputPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -112,7 +112,7 @@
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Osama.elhussiny\\source\\repos\\FreshMvvmPattern\\FreshMvvm": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

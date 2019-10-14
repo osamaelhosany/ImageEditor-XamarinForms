@@ -886,11 +886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
+      "projectUniqueName": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
       "projectName": "ImageEditor",
-      "projectPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
+      "projectPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\ImageEditor.csproj",
       "packagesPath": "C:\\Users\\Osama.elhussiny\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\osama's work\\ImageEditor\\ImageEditor\\ImageEditor\\obj\\",
+      "outputPath": "E:\\Projects\\osama's work\\ImageEditor-XamarinForms\\ImageEditor\\ImageEditor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -905,7 +905,7 @@
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Osama.elhussiny\\source\\repos\\FreshMvvmPattern\\FreshMvvm": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
