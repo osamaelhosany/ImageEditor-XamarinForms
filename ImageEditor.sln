@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageEditor.Android", "ImageEditor\ImageEditor.Android\ImageEditor.Android.csproj", "{D1AFBC66-20C3-4A3F-A975-00C991199CE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageEditor.Android", "Src\ImageEditor.Android\ImageEditor.Android.csproj", "{D1AFBC66-20C3-4A3F-A975-00C991199CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageEditor.iOS", "ImageEditor\ImageEditor.iOS\ImageEditor.iOS.csproj", "{EEE32D2B-5D39-4F93-B076-4B2B9D714880}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageEditor.iOS", "Src\ImageEditor.iOS\ImageEditor.iOS.csproj", "{EEE32D2B-5D39-4F93-B076-4B2B9D714880}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageEditor", "ImageEditor\ImageEditor\ImageEditor.csproj", "{69A7788F-7995-4640-80F6-97D32E06BF3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageEditor", "Src\ImageEditor\ImageEditor.csproj", "{69A7788F-7995-4640-80F6-97D32E06BF3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
