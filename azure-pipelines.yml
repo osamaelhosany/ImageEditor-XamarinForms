@@ -13,15 +13,15 @@ pr:
 
 # The type of machine this build should run on and what software should be on it
 pool:
-  name: Hosted VS2019
+  name: Hosted VS2017
   demands: msbuild
 
 # The different steps in our build
 steps:
-- task: NuGetToolInstaller@0
-  displayName: 'Use NuGet 4.9.3'
-  inputs:
-    versionSpec: 4.9.3
+# - task: NuGetToolInstaller@0
+#   displayName: 'Use NuGet 4.9.3'
+#   inputs:
+#     versionSpec: 4.9.3
 
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
