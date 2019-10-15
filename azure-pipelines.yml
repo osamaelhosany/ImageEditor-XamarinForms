@@ -17,7 +17,7 @@ pool:
   demands: msbuild
 
 # The different steps in our build
-# steps:
+steps:
 # - task: NuGetToolInstaller@0
 #   displayName: 'Use NuGet 4.9.3'
 #   inputs:
