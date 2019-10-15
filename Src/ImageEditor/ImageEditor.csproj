@@ -1,6 +1,9 @@
 <Project Sdk="MSBuild.Sdk.Extras/2.0.29">
 
   <PropertyGroup>
+    <AssemblyName>ImageEditor</AssemblyName>
+    <RootNamespace>ImageEditor.ImageEditor</RootNamespace>
+    <PackageId>ImageEditor.ImageEditor</PackageId>
     <TargetFrameworks>netstandard2.0;</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <Authors>&gt;Osama ElHussiny</Authors>
@@ -15,6 +18,7 @@
     <NeutralLanguage>en-001</NeutralLanguage>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
 
