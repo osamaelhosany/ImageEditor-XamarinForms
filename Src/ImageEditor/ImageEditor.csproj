@@ -19,6 +19,9 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+
   </PropertyGroup>
 
 
