@@ -17,26 +17,31 @@ namespace ImageEditor.ViewModels
         public ICommand ChoosePhotoCommand { get; set; }
         public MainViewModel()
         {
-            ChoosePhotoCommand = new Command(ChoosePhotoCommandExecute);
+            ChoosePhotoCommand = new Command(async(obj)=>await ChoosePhotoCommandExecute(obj));
         }
 
-        private async void ChoosePhotoCommandExecute(object obj)
+        private async Task ChoosePhotoCommandExecute(object obj)
         {
             string selectedOption = await App.Current.MainPage.DisplayActionSheet("Select Option", "Cancel", "",
                 new string[] { "Take New Photo", "From Gallery" });
+            
             switch (selectedOption)
             {
                 case "Take New Photo":
-                    TakePictureFromCamera();
+                   SelectedImage = await TakePictureFromCamera();
                     break;
                 case "From Gallery":
-                    TakePictureFromLibrary();
+                   SelectedImage = await TakePictureFromLibrary();
                     break;
                 default:
                     break;
             }
+            if (!string.IsNullOrEmpty(SelectedImage))
+            {
+                await App.Current.MainPage.Navigation.PushModalAsync(new ImageEditorPage(SelectedImage), true);
+            }
         }
-        private async void TakePictureFromLibrary()
+        private async Task<string> TakePictureFromLibrary()
         {
             IsBusy = true;
             var file = await CrossMedia.Current.PickPhotoAsync
@@ -45,18 +50,14 @@ namespace ImageEditor.ViewModels
                     SaveMetaData = true,
                     PhotoSize = PhotoSize.MaxWidthHeight
                 });
-            if (file != null)
-            {
-                SelectedImage = file.Path;
-                App.Current.MainPage.Navigation.PushModalAsync(new ImageEditorPage(SelectedImage));
-
-            }
-            else
-            {
-            }
             IsBusy = false;
+            if (file == null)
+                return null;
+            
+            return file.Path;
+           
         }
-        private async void TakePictureFromCamera()
+        private async Task<string> TakePictureFromCamera()
         {
             IsBusy = true;
             var file = await CrossMedia.Current.TakePhotoAsync
@@ -66,16 +67,12 @@ namespace ImageEditor.ViewModels
                     PhotoSize = PhotoSize.MaxWidthHeight
                 });
 
-            if (file != null)
-            {
-                SelectedImage = file.Path;
-                App.Current.MainPage.Navigation.PushModalAsync(new ImageEditorPage(SelectedImage));
-            }
-            else
-            {
-
-            }
             IsBusy = false;
+            if (file == null)
+                return null;
+
+            return file.Path;
         }
+        
     }
 }

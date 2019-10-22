@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace ImageEditor.Controls
 {
-    public class RoundedBox : BoxView
+   internal class RoundedBox : BoxView
     {
         private double _size;
 

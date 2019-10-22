@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace ImageEditor.Helpers
 {
-    public static class SliderColorsList
+    internal static class SliderColorsList
     {
         public static List<SliderColors> SliderColors = new List<SliderColors>()
         {

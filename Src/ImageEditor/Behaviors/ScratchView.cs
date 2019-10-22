@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace ImageEditor.Behaviors
 {
-    public class ScratchView :  Behavior<SignaturePadView>
+    internal class ScratchView :  Behavior<SignaturePadView>
     {
         protected override void OnAttachedTo(SignaturePadView bindable)
         {

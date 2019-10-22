@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace ImageEditor.Behaviors
 {
-	public class PanContainer : ContentView
+	internal class PanContainer : ContentView
 	{
 		double x, y;
 

@@ -6,12 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ImageEditor.ViewModels
 {
-    public class ImageEditorViewModel : BaseViewModel
+    internal class ImageEditorViewModel : BaseViewModel
     {
         public string SelectedImage { get; set; }
         public string CommentColor { get; set; }
@@ -69,9 +70,12 @@ namespace ImageEditor.ViewModels
             var scratchslider = editorPage.Content.FindByName("scratchcolorslider") as Slider;
             scratchslider.IsVisible = false;
 
+            await App.Current.MainPage.Navigation.PopModalAsync();
+
             string path = await CrossScreenshot.Current.CaptureAndSaveAsync();
 
-            await App.Current.MainPage.Navigation.PopModalAsync();
+            
         }
+  
     }
 }
