@@ -7,7 +7,7 @@ namespace ImageEditor.Helpers
 {
     internal static class SliderColorsList
     {
-        public static List<SliderColors> SliderColors = new List<SliderColors>()
+        internal static List<SliderColors> SliderColors = new List<SliderColors>()
         {
             new SliderColors
             {
@@ -61,7 +61,7 @@ namespace ImageEditor.Helpers
             }
         };
     }
-    public class SliderColors
+    internal class SliderColors
     {
         public int ID { get; set; }
         public string ColorOnHEX { get; set; }

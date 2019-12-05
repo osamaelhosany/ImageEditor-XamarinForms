@@ -3,13 +3,20 @@
   <PropertyGroup>
     <AssemblyName>ImageEditor</AssemblyName>
     <RootNamespace>ImageEditor.ImageEditor</RootNamespace>
-    <PackageId>ImageEditor.ImageEditor</PackageId>
+    <PackageId>Xamarin.Forms.ImageEditor</PackageId>
     <TargetFrameworks>netstandard2.0;</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <Authors>&gt;Osama ElHussiny</Authors>
     <Owners>&gt;Osama ElHussiny</Owners>
     <Product>&gt;Osama ElHussiny</Product>
-    <Description>Image Editor Control To Draw-Add Text-Rotate</Description>
+    <Description>ImageEditorControl Same as WhatsApp
+
+Draw (redo &amp; undo &amp; clear)
+Add text
+Move text
+Change (Stroke &amp; Text) colors with slider
+Rotate Image
+Reset all settings</Description>
     <Copyright>Copyright 2019</Copyright>
     <PackageLicenseUrl>https://github.com/osamaelhosany/ImageEditor-XamarinForms</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/osamaelhosany/ImageEditor-XamarinForms</PackageProjectUrl>
@@ -21,13 +28,15 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
     <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.3</Version>
 
   </PropertyGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.1.0" />
-    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
     <PackageReference Include="Xam.Plugin.Screenshot" Version="2.0.0" />
     <PackageReference Include="Xamarin.Controls.SignaturePad.Forms" Version="3.0.0" />
@@ -44,5 +53,9 @@
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="**\*.apple.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

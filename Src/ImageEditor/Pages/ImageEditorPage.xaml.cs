@@ -16,7 +16,7 @@ namespace ImageEditor.Pages
         public ImageEditorPage (string SelectedImage)
 		{
 			InitializeComponent ();
-            BindingContext = new ImageEditorViewModel(SelectedImage);
+            //BindingContext = new ImageEditorViewModel(SelectedImage);
 		}
 
         private void Editorcomment_Unfocused(object sender, FocusEventArgs e)

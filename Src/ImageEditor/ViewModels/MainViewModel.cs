@@ -38,9 +38,12 @@ namespace ImageEditor.ViewModels
             }
             if (!string.IsNullOrEmpty(SelectedImage))
             {
-                await App.Current.MainPage.Navigation.PushModalAsync(new ImageEditorPage(SelectedImage), true);
+                await Current.EditImage(SelectedImage, testphoto);
             }
         }
+        
+    
+
         private async Task<string> TakePictureFromLibrary()
         {
             IsBusy = true;
@@ -74,5 +77,10 @@ namespace ImageEditor.ViewModels
             return file.Path;
         }
         
+        private void testphoto(string selectedimage)
+        {
+            
+        }
+
     }
 }

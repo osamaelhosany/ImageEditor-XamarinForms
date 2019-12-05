@@ -4,7 +4,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Pad="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
-    xmlns:base="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
     xmlns:controls="clr-namespace:ImageEditor.Controls"
     xmlns:padview="clr-namespace:ImageEditor.Behaviors"
     x:Name="RootItem">
@@ -79,7 +78,8 @@
 
             <Image
                 x:Name="imgcolors"
-                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutBounds="{OnIdiom Tablet='550,250,400,50',
+                                                      Phone='220,180,300,50'}"
                 AbsoluteLayout.LayoutFlags="None"
                 BackgroundColor="Transparent"
                 IsVisible="False"
@@ -88,7 +88,8 @@
 
             <Slider
                 x:Name="commentcolorslider"
-                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutBounds="{OnIdiom Tablet='550,250,400,50',
+                                                      Phone='220,180,300,50'}"
                 AbsoluteLayout.LayoutFlags="None"
                 BackgroundColor="Transparent"
                 IsVisible="False"
@@ -102,7 +103,8 @@
 
             <Slider
                 x:Name="scratchcolorslider"
-                AbsoluteLayout.LayoutBounds="220,180,300,50"
+                AbsoluteLayout.LayoutBounds="{OnIdiom Tablet='550,250,400,50',
+                                                      Phone='220,180,300,50'}"
                 AbsoluteLayout.LayoutFlags="None"
                 BackgroundColor="Transparent"
                 IsVisible="False"
